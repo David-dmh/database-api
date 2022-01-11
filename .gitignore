@@ -1,0 +1,4 @@
+constants/db_pass.bin
+migrations/
+state_data/
+reaucom_get_data.py

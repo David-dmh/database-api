@@ -1,0 +1,247 @@
+{
+   "openapi":"3.0.0",
+   "info":{
+      "description":"Australian public MLS data API. Ideal for property investors.",
+      "version":"1.0.0",
+      "title":"au_prop REST API",
+      "license":{
+         "name":"MIT License",
+         "url":"https://opensource.org/licenses/MIT"
+      }
+   },
+   "servers":[
+      {
+         "url":"/"
+      }
+   ],
+   "tags":[
+      {
+         "name":"Listing info",
+         "description":"Return MLS listings with detailed specifications."
+      }
+   ],
+   "paths":{
+      "/houses":{
+         "get":{
+            "tags":[
+               "Listing info"
+            ],
+            "summary":"Multi-parameter GET request.",
+            "description":"Query listing data.",
+            "operationId":"multiOp",
+            "produces":[
+               "application/xml",
+               "application/json"
+            ],
+            "parameters":[
+               {
+                  "name":"id",
+                  "in":"query",
+                  "description":"",
+                  "type":"integer"
+               },
+               {
+                  "name":"full_address",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"suburb",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"state",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"postcode",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"price",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"bedrooms",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"bathrooms",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"parking_spaces",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"building_size",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"building_size_unit",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"land_size",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"land_size_unit",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"listing_company_name",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"sold_date",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"description",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               },
+               {
+                  "name":"listing_download_date",
+                  "in":"query",
+                  "description":"",
+                  "type":"string"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "type":"string"
+                  }
+               },
+               "400":{
+                  "description":"Invalid parameters."
+               }
+            }
+         }
+      }
+   },
+   "components":{
+      "schemas":{
+         "Listing":{
+            "properties":{
+               "id":{
+                  "type":"integer",
+                  "example":"10",
+                  "description":"Auto-generated listing ID."
+               },
+               "full_address":{
+                  "type":"string",
+                  "example":"001 Church Street, Churchway, ACT 0001",
+                  "description":"Address of listing."
+               },
+               "suburb":{
+                  "type":"string",
+                  "example":"Churchway",
+                  "description":"Listing suburb."
+               },
+               "state":{
+                  "type":"string",
+                  "example":"ACT",
+                  "description":"Listing state."
+               },
+               "postcode":{
+                  "type":"string",
+                  "example":"0001",
+                  "description":"Listing postcode."
+               },
+               "price":{
+                  "type":"string",
+                  "example":"eg",
+                  "description":"List price of property."
+               },
+               "bedrooms":{
+                  "type":"string",
+                  "example":"3",
+                  "description":"Number of bedrooms for listing."
+               },
+               "bathrooms":{
+                  "type":"string",
+                  "example":"1",
+                  "description":"Number of bathrooms for listing."
+               },
+               "parking_spaces":{
+                  "type":"string",
+                  "example":"2",
+                  "description":"Number of parking_spaces for listing."
+               },
+               "building_size":{
+                  "type":"string",
+                  "example":"500",
+                  "description":"Measured building_size."
+               },
+               "building_size_unit":{
+                  "type":"string",
+                  "example":"m²",
+                  "description":"Unit used to measure building_size."
+               },
+               "land_size":{
+                  "type":"string",
+                  "example":"1000",
+                  "description":"Measured land_size."
+               },
+               "land_size_unit":{
+                  "type":"string",
+                  "example":"m²",
+                  "description":"Unit used to measure land_size."
+               },
+               "listing_company_name":{
+                  "type":"string",
+                  "example":"ABC Agents",
+                  "description":"Name of company used to sell listing."
+               },
+               "sold_date":{
+                  "type":"string",
+                  "example":"",
+                  "description":"Last sold date."
+               },
+               "description":{
+                  "type":"string",
+                  "example":"Fantastic property.",
+                  "description":"Sales description of listing."
+               },
+               "listing_download_date":{
+                  "type":"string",
+                  "example":"2021-12-31",
+                  "description":"Date on which listing data was scraped."
+               }
+            }
+         }
+      }
+   }
+}
