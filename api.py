@@ -6,9 +6,7 @@ from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
 
-with open(os.path.dirname(os.path.realpath(__file__))+"\constants\db_pass.bin") as file:
-    DB_PASS = file.read().strip()
-
+DB_PASS = os.environ["F_API_DB_PASS"]
     
 SWAGGER_URL = "/swagger"
 API_URL = "/static/swagger.json"
