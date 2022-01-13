@@ -7,7 +7,6 @@ from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
 
-# DB_PASS = os.environ["F_API_DB_PASS"]
 DATABASE_URL = os.environ["DATABASE_URL"]
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
@@ -24,10 +23,8 @@ SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
 
 app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
 
-# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:"+DB_PASS+"@localhost:5432/au_prop_api"
 app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-# app.config["DEBUG"] = True
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
