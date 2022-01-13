@@ -1,4 +1,5 @@
 import os
+import re
 from flask import Flask, request, send_from_directory, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -8,6 +9,8 @@ app = Flask(__name__)
 
 # DB_PASS = os.environ["F_API_DB_PASS"]
 DATABASE_URL = os.environ["DATABASE_URL"]
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
     
 SWAGGER_URL = "/swagger"
 API_URL = "/static/swagger.json"
