@@ -8,8 +8,8 @@ from flask_swagger_ui import get_swaggerui_blueprint
 app = Flask(__name__)
 
 DATABASE_URL = os.environ["DATABASE_URL"]
-# if DATABASE_URL.startswith("postgres://"):
-    # DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
     
 SWAGGER_URL = "/swagger"
 API_URL = "/static/swagger.json"
