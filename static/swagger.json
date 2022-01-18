@@ -133,89 +133,55 @@
 			"type": "object",
             "properties":{
                "id":{
-                  "type":"integer",
-                  "example":"10",
-                  "description":"Auto-generated listing ID."
+                  "type":"integer"
                },
                "full_address":{
-                  "type":"string",
-                  "example":"001 Church Street, Churchway, ACT 0001",
-                  "description":"Address of listing."
+                  "type":"string"
                },
                "suburb":{
-                  "type":"string",
-                  "example":"Churchway",
-                  "description":"Listing suburb."
+                  "type":"string"
                },
                "state":{
-                  "type":"string",
-                  "example":"ACT",
-                  "description":"Listing state."
+                  "type":"string"
                },
                "postcode":{
-                  "type":"string",
-                  "example":"0001",
-                  "description":"Listing postcode."
+                  "type":"string"
                },
                "price":{
-                  "type":"string",
-                  "example":"eg",
-                  "description":"List price of property."
+                  "type":"string"
                },
                "bedrooms":{
-                  "type":"string",
-                  "example":"3",
-                  "description":"Number of bedrooms for listing."
+                  "type":"string"
                },
                "bathrooms":{
-                  "type":"string",
-                  "example":"1",
-                  "description":"Number of bathrooms for listing."
+                  "type":"string"
                },
                "parking_spaces":{
-                  "type":"string",
-                  "example":"2",
-                  "description":"Number of parking_spaces for listing."
+                  "type":"string"
                },
                "building_size":{
-                  "type":"string",
-                  "example":"500",
-                  "description":"Measured building_size."
+                  "type":"string"
                },
                "building_size_unit":{
-                  "type":"string",
-                  "example":"m²",
-                  "description":"Unit used to measure building_size."
+                  "type":"string"
                },
                "land_size":{
-                  "type":"string",
-                  "example":"1000",
-                  "description":"Measured land_size."
+                  "type":"string"
                },
                "land_size_unit":{
-                  "type":"string",
-                  "example":"m²",
-                  "description":"Unit used to measure land_size."
+                  "type":"string"
                },
                "listing_company_name":{
-                  "type":"string",
-                  "example":"ABC Agents",
-                  "description":"Name of company used to sell listing."
+                  "type":"string"
                },
                "sold_date":{
-                  "type":"string",
-                  "example":"",
-                  "description":"Last sold date."
+                  "type":"string"
                },
                "description":{
-                  "type":"string",
-                  "example":"Fantastic property.",
-                  "description":"Sales description of listing."
+                  "type":"string"
                },
                "listing_download_date":{
-                  "type":"string",
-                  "example":"2021-12-31",
-                  "description":"Date on which listing data was scraped."
+                  "type":"string"
                }
             }
          }
