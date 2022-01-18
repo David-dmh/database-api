@@ -29,10 +29,6 @@
             "summary":"Multi-parameter GET request.",
             "description":"Query listing data.",
             "operationId":"multiOp",
-            "produces":[
-               "application/xml",
-               "application/json"
-            ],
             "parameters":[
                {
                   "name":"id",
@@ -122,10 +118,7 @@
             ],
             "responses":{
                "200":{
-                  "description":"OK",
-                  "schema":{
-                     "type":"string"
-                  }
+                  "description":"OK"
                },
                "400":{
                   "description":"Invalid parameters."
