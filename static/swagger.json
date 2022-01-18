@@ -130,6 +130,7 @@
    "components":{
       "schemas":{
          "Listing":{
+			"type": "object",
             "properties":{
                "id":{
                   "type":"integer",
