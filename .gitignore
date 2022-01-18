@@ -3,3 +3,4 @@ constants/db_pass.bin
 state_data/
 reaucom_get_data.py
 prod_pkl_db_load.py
+migrations/

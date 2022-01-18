@@ -37,8 +37,7 @@
                {
                   "name":"id",
                   "in":"query",
-                  "description":"",
-                  "type":"integer"
+                  "description":""
                },
                {
                   "name":"full_address",
