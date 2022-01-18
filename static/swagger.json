@@ -42,98 +42,82 @@
                {
                   "name":"full_address",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"suburb",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"state",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"postcode",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"price",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"bedrooms",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"bathrooms",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"parking_spaces",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"building_size",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"building_size_unit",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"land_size",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"land_size_unit",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"listing_company_name",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"sold_date",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"description",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                },
                {
                   "name":"listing_download_date",
                   "in":"query",
-                  "description":"",
-                  "type":"string"
+                  "description":""
                }
             ],
             "responses":{
