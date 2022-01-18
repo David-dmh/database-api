@@ -33,87 +33,122 @@
                {
                   "name":"id",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "integer",
+					  "format": "int32"
+                  }
                },
                {
                   "name":"full_address",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"suburb",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"state",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"postcode",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"price",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"bedrooms",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"bathrooms",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"parking_spaces",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"building_size",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"building_size_unit",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"land_size",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"land_size_unit",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"listing_company_name",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"sold_date",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"description",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                },
                {
                   "name":"listing_download_date",
                   "in":"query",
-                  "description":""
+				  "schema": {
+					  "type": "string"
+                  }
                }
             ],
             "responses":{
@@ -186,5 +221,6 @@
             }
          }
       }
+
    }
 }
