@@ -1,7 +1,7 @@
 {
    "openapi":"3.0.0",
    "info":{
-      "description":"Australian public MLS data API. Ideal for property investors.",
+      "description":"API for Australian property listing data.",
       "version":"1.0.0",
       "title":"au_prop REST API",
       "license":{
@@ -17,7 +17,7 @@
    "tags":[
       {
          "name":"Listing info",
-         "description":"Return MLS listings with detailed specifications."
+         "description":"Return property listings with detailed specifications."
       }
    ],
    "paths":{
